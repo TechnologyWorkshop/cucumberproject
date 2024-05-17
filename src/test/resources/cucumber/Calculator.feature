@@ -29,4 +29,4 @@ Examples:
 |add		|3		|3		|6		|
 |add		|3		|1		|4		|
 |subtract	|4		|1		|3		|
-|subtract	|2		|2		|0		|
+|subtract	|2		|2		|1		|
