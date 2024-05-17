@@ -18,7 +18,7 @@ public class CalculatorSteps {
     
 	@Before
     public void beforeScenario(){
-    	System.setProperty("webdriver.chrome.driver", "C:\\cucumberTraining\\drivers\\chromedriver.exe");
+    	System.setProperty("webdriver.chrome.driver", "drivers\\chromedriver.exe");
     	page = PageFactory.initElements(new ChromeDriver(), CalculatorPage.class);
     }	
 	
