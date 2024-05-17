@@ -7,7 +7,7 @@ Feature: Calculator
 Scenario:  Add a number
 Given I go to the calculator webpage
 When I add 1 and 4
-Then the outcome of should be 6
+Then the outcome of should be 7
 
 Scenario:  Subtract a number
 Given I go to the calculator webpage
