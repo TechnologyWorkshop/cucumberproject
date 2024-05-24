@@ -107,13 +107,13 @@
 				<version>3.2.5</version>
 				<configuration>
 					<testFailureIgnore>true</testFailureIgnore>
-					<argLine>
-						--add-opens java.base/java.lang=ALL-UNNAMED
-						--add-opens java.base/java.util=ALL-UNNAMED
-						--add-opens java.base/java.lang.reflect=ALL-UNNAMED
-						--add-opens java.base/java.text=ALL-UNNAMED
-						--add-opens java.desktop/java.awt.font=ALL-UNNAMED
-					</argLine>
+<!--					<argLine>-->
+<!--						&#45;&#45;add-opens java.base/java.lang=ALL-UNNAMED-->
+<!--						&#45;&#45;add-opens java.base/java.util=ALL-UNNAMED-->
+<!--						&#45;&#45;add-opens java.base/java.lang.reflect=ALL-UNNAMED-->
+<!--						&#45;&#45;add-opens java.base/java.text=ALL-UNNAMED-->
+<!--						&#45;&#45;add-opens java.desktop/java.awt.font=ALL-UNNAMED-->
+<!--					</argLine>-->
 				</configuration>
 			</plugin>
             <plugin>
