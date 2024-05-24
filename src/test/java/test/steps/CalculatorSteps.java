@@ -1,7 +1,10 @@
 package test.steps;
 
 import static org.junit.Assert.*;
+
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.PageFactory;
 
 import cucumber.api.java.After;
@@ -19,7 +22,10 @@ public class CalculatorSteps {
 	@Before
     public void beforeScenario(){
     	System.setProperty("webdriver.chrome.driver", "drivers\\chromedriver.exe");
-    	page = PageFactory.initElements(new ChromeDriver(), CalculatorPage.class);
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
+        WebDriver driver = new ChromeDriver(options);
+    	page = PageFactory.initElements(driver, CalculatorPage.class);
     }	
 	
     @Given("^I go to the calculator webpage$")
