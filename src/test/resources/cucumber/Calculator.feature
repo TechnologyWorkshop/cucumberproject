@@ -12,7 +12,7 @@ Feature: Calculator
   Scenario:  Subtract a number
     Given I go to the calculator webpage
     When I subtract 4 and 1
-    Then the outcome of should be 4
+    Then the outcome of should be 3
 
   Scenario:  Multiply a number
     Given I go to the calculator webpage
