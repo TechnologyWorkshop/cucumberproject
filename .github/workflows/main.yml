@@ -37,5 +37,10 @@ jobs:
     - name: Install ChromeDriver
       uses: nanasess/setup-chromedriver@v2
 
+    - name: Set up virtual display
+      run: |
+            export DISPLAY=:99
+            sudo Xvfb :99 -screen 0 1280x1024x24 +extension RANDR &
+
     - name: Run Cucumber tests
       run: mvn test
