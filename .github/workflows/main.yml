@@ -34,18 +34,8 @@ jobs:
       run: mvn install -DskipTests
       continue-on-error: true
 
-    - name: Install Chrome
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y google-chrome-stable
-
-    - name: Download ChromeDriver
-      run: |
-        CHROME_DRIVER_VERSION=$(curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE)
-        wget -N https://chromedriver.storage.googleapis.com/$CHROME_DRIVER_VERSION/chromedriver_linux64.zip
-        unzip chromedriver_linux64.zip
-        sudo mv -f chromedriver /usr/local/bin/chromedriver
-        sudo chmod +x /usr/local/bin/chromedriver
+    - name: Install ChromeDriver
+      uses: nanasess/setup-chromedriver@v2
 
     - name: Run Cucumber tests
       run: mvn test

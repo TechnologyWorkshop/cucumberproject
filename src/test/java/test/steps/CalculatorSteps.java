@@ -21,7 +21,7 @@ public class CalculatorSteps {
     
 	@Before
     public void beforeScenario(){
-    	System.setProperty("webdriver.chrome.driver", "drivers\\chromedriver.exe");
+    	System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
         WebDriver driver = new ChromeDriver(options);
@@ -67,10 +67,10 @@ public class CalculatorSteps {
     	page.clickValue(value2);
     }
 	
-//	@After
-//    public void afterScenario(){
-//    	page.close();
-//    }
+	@After
+    public void afterScenario(){
+    	page.close();
+    }
 
 //    comentaar 1
 }
