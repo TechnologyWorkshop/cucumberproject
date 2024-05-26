@@ -67,10 +67,10 @@ public class CalculatorSteps {
     	page.clickValue(value2);
     }
 	
-	@After
-    public void afterScenario(){
-    	page.close();
-    }
+//	@After
+//    public void afterScenario(){
+//    	page.close();
+//    }
 
 //    comentaar 1
 }
