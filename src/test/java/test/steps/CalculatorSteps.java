@@ -21,7 +21,9 @@ public class CalculatorSteps {
     
 	@Before
     public void beforeScenario(){
-//    	System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
+        if (System.getProperty("os.name") =="Windows 10") {
+            System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
+        }
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
         WebDriver driver = new ChromeDriver(options);

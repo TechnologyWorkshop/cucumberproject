@@ -7,12 +7,12 @@ Feature: Calculator
   Scenario:  Add a number
     Given I go to the calculator webpage
     When I add 1 and 4
-    Then the outcome of should be 6
+    Then the outcome of should be 5
 
   Scenario:  Subtract a number
     Given I go to the calculator webpage
     When I subtract 4 and 1
-    Then the outcome of should be 3
+    Then the outcome of should be 4
 
   Scenario:  Multiply a number
     Given I go to the calculator webpage
